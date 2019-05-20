@@ -20,7 +20,6 @@ function toyShop(input) {
   (toysPrice.minionPrice * toys.minions) + (toysPrice.truckPrice * toys.trucks);
   if (totalToys >= 50) {
     totalPrice = totalPrice - (totalPrice * 0.25);
-  } else {
   }
   totalPrice = totalPrice - (totalPrice * 0.10);
   if(tripPrice <= totalPrice){
