@@ -7,12 +7,12 @@ function tennisRanklist(input) {
     totalPoints: 0,
   }
   for (let i = 2; i < input.length; i++) {
-    if (input[i] === 'W'){
+    if (input[i] === 'W') {
       tours.won++;
       tours.totalPoints += tours.w;
-    } else if (input[i] === 'F'){
+    } else if (input[i] === 'F') {
       tours.totalPoints += tours.f;
-    } else if (input[i] === 'SF'){
+    } else if (input[i] === 'SF') {
       tours.totalPoints += tours.sF;
     }
   }
