@@ -1,6 +1,5 @@
 function basketballTournaments(input) {
   let tournament = input[0];
-  let tournaments = 1;
   let firstPoints = 0;
   let secondPoints = 0;
   let won = 0;
@@ -26,7 +25,6 @@ function basketballTournaments(input) {
     }
     if (input[i].length > 3) {
       tournament = input[i];
-      tournaments++;
       game = 1;
     }
   }
