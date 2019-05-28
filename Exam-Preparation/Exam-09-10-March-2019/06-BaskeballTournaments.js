@@ -8,23 +8,23 @@ function basketballTournaments(input) {
   let game = 1;
   let tourGames = 0;
   for (let i = 2; i < input.length; i += 2) {
-    if (input[i] === 'End of tournaments'){
+    if (input[i] === 'End of tournaments') {
       break;
     }
     firstPoints = Number(input[i]);
     secondPoints = Number(input[i + 1])
-    if (firstPoints > secondPoints){
+    if (firstPoints > secondPoints) {
       console.log(`Game ${game} of tournament ${tournament}: win with ${firstPoints - secondPoints} points.`);
       game++;
       won++;
       tourGames++;
-    } else if (firstPoints < secondPoints){
+    } else if (firstPoints < secondPoints) {
       console.log(`Game ${game} of tournament ${tournament}: lost with ${secondPoints - firstPoints} points.`);
       game++;
       lost++;
       tourGames++;
     }
-    if (input[i].length > 3){
+    if (input[i].length > 3) {
       tournament = input[i];
       tournaments++;
       game = 1;

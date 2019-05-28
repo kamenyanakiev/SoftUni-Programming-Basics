@@ -8,7 +8,7 @@ function highJump(input) {
       requiredHeight += 5;
       success++;
       fail = 0;
-    } else if (input[i] <= requiredHeight && input[i] > 100){
+    } else if (input[i] <= requiredHeight && input[i] > 100) {
       fail++;
       success++
     }
