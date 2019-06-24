@@ -14,6 +14,6 @@ function nameWars(input) {
       topName = input[i];
     }
   }
-  console.log(`Winner is ${topName} - ${topSum}`);
+  console.log(`Winner is ${topName} - ${topSum}!`);
 }
 nameWars(['Petar', 'Georgi', 'Stanimir', 'STOP']);
