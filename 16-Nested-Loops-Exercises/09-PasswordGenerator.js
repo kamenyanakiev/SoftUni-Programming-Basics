@@ -6,17 +6,10 @@ function passwordGenerator(input) {
     for (let j = 1; j <= n; j++) {
       for (let k = 1; k <= l; k++) {
         for (let p = 1; p <= l; p ++) {
-          for (let m = 2; m < n ; m++) {
-            if (i + 1 > n || j + 1 > n){
-              continue;
-            }
-            if (i > j) {
-              result += `${i}${j}${String.fromCharCode(96 + k)}${String.fromCharCode(96 + p)}${i + 1} `;
-            } else if (j > i) {
-              result += `${i}${j}${String.fromCharCode(96 + k)}${String.fromCharCode(96 + p)}${j + 1} `;
-            } else if (i === j){
-              result += `${i}${j}${String.fromCharCode(96 + k)}${String.fromCharCode(96 + p)}${i + 1} `;
-            }
+          for (let m = 2; m <= n ; m++) {
+            if (m > j && m > i) {
+              result += `${i}${j}${String.fromCharCode(96 + k)}${String.fromCharCode(96 + p)}${m} `;
+            } 
           }
         }
       }
